@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
+  "description": "Merge nearby experience orbs to reduce lag.",
+  "authors": [
+    "Xueria"
+  ],
+  "depends": {
+    "fishmodloader": ">=3.4.2",
+    "fabric-language-kotlin": ">=1.14.1+kotlin.2.4.20"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.xueria.clumps.Clumps"
+      }
+    ]
+  },
+  "mixins": [
+    "clumps.mixins.json"
+  ]
+}
