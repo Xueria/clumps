@@ -19,7 +19,7 @@ class WorldOrbSource : OrbSource {
 
     private fun snapshotOf(orb: EntityXPOrb): OrbSnapshot = OrbSnapshot(
         entityId = orb.entityId,
-        value = orb.getXpValue(),
+        value = orb.xpValue,
         age = orb.xpOrbAge,
         owner = orb.player_this_belongs_to?.takeIf { it.isNotEmpty() },
         bottle = orb.created_by_bottle_of_enchanting,
